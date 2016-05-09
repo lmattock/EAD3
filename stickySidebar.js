@@ -50,7 +50,7 @@
 
         return this.each(function () {
             $(window).on('scroll', $.proxy(fixSidebr, this));
-            $(window).on('resize', $.proxy(fixSidebr, this))
+            $(window).on('resize', $.proxy(fixSidebr, this));
             $.proxy(fixSidebr, this)();
         });
 
