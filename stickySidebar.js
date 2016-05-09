@@ -32,7 +32,7 @@
 
                 if (scroll_top < breakingPoint1) {
 
-                    sidebarSelector.removeClass(‘sticky’).css(‘top’, ”);
+                    sidebarSelector.removeClass('sticky');
 
                 } else if ((scroll_top >= breakingPoint1) && (scroll_top < breakingPoint2)) {
 
@@ -50,7 +50,7 @@
 
         return this.each(function () {
             $(window).on('scroll', $.proxy(fixSidebr, this));
-            $(window).on('resize', $.proxy(fixSidebr, this));
+            $(window).on('resize', $.proxy(fixSidebr, this))
             $.proxy(fixSidebr, this)();
         });
 
